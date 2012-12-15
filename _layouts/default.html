@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{title}}</title>
+  <meta name="description" content="Just taking up space on the internet">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+
+  {% include header.html %}
+
+{{ content }}
+
+  {% include footer.html %}
+
+<!--<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script> -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>
+  var _gaq=[['_setAccount','UA-29333767-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  // github pages does not allow https so do not do the usual
+  // ternary operation for ssl vs www.
+  g.src= '//www.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>
