@@ -207,6 +207,8 @@ table {
   font-style: normal;
 }
 
+/* GENERIC
+----------------------------------------------- */
 html {
   color: #2d2d2d;
 }
@@ -221,17 +223,19 @@ body {
   line-height: 1.625em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: UbuntuMono-B, consolas, monaco, monospace;
+}
+
 /* LINK */
 a:link {
   color: #2d2d2d;
   text-decoration: none;
 }
-
 a:visited {
   color: #141414;
   text-decoration: none;
 }
-
 a:hover {
   color: #474747;
   text-decoration: none;
@@ -415,6 +419,73 @@ nav ul, nav ol {
   margin-top: 0;
   margin-bottom: 0;
 }
+.blog-post a:link {
+  border-bottom: 1px dashed #c26164;
+}
+.blog-post a:visited {
+  border-bottom: 1px dashed #ad4346;
+}
+.blog-post a:hover {
+  border-bottom: 1px dashed #d08688;
+}
+.blog-post .date-publish {
+  margin-bottom: 0;
+}
+.blog-post .list-linear .list-head {
+  margin-right: 4px;
+}
+.blog-post .list-category a,
+.blog-post .list-tag a {
+  border: 0 none;
+}
+.blog-post .list-category a:hover span,
+.blog-post .list-tag a:hover span {
+  background-color: #f99157;
+}
+.blog-post .list-category span,
+.blog-post .list-tag span {
+  background-color: #e25608;
+  padding: 1px 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 6px 0 0;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  top: -2px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.blog-post .list-category {
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.blog-post .list-tag {
+  text-transform: capitalize;
+}
+.blog-post .comment a {
+  border-bottom: 0;
+}
+.blog-post .unit-foot {
+  border-top: 5px solid rgba(21, 25, 25, 0.8);
+  padding-top: 1.625em;
+  position: relative;
+}
+.blog-post .unit-foot nav ul {
+  list-style: none;
+}
+.blog-post .unit-foot nav ul li {
+  display: inline;
+}
+.blog-post .unit-foot .gotop {
+  margin-bottom: 0;
+}
+.blog-post .content :first-child h2, .blog-post .content:first-child h3, .blog-post .content:first-child h4, .blog-post .content:first-child h5, .blog-post .content:first-child h6 {
+  margin-top: 0;
+}
 .blog-post .content h1, .blog-post .content h2, .blog-post .content h3, .blog-post .content h4, .blog-post .content h5, .blog-post .content h6 {
   color: #2d2d2d;
 }
@@ -505,10 +576,6 @@ nav ul, nav ol {
     max-width: 100%;
   }
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: UbuntuMono-B, consolas, monaco, monospace;
-}
-
 h1,
 .h1 {
   font-size: 30px;
@@ -597,95 +664,6 @@ em {
 
 .list-linear li:last-child {
   margin-right: 0;
-}
-
-/* MAIN
---------------------------------------------------------------------------------- */
-.unit-article .entry-content:first-child h2,
-.unit-article .entry-content:first-child h3,
-.unit-article .entry-content:first-child h4,
-.unit-article .entry-content:first-child h5,
-.unit-article .entry-content:first-child h6 {
-  margin-top: 0;
-}
-
-.unit-article a:link {
-  border-bottom: 1px dashed #c26164;
-}
-
-.unit-article a:visited {
-  border-bottom: 1px dashed #ad4346;
-}
-
-.unit-article a:hover {
-  border-bottom: 1px dashed #d08688;
-}
-
-.unit-article .date-publish {
-  margin-bottom: 0;
-}
-
-.unit-article .list-linear .list-head {
-  margin-right: 4px;
-}
-
-.unit-article .list-category a,
-.unit-article .list-tag a {
-  border: 0 none;
-}
-
-.unit-article .list-category a:hover span,
-.unit-article .list-tag a:hover span {
-  background-color: #f99157;
-}
-
-.unit-article .list-category span,
-.unit-article .list-tag span {
-  background-color: #e25608;
-  padding: 1px 5px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  color: white;
-  text-transform: uppercase;
-  margin: 0 6px 0 0;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  top: -2px;
-  font-weight: bold;
-  font-size: 13px;
-}
-
-.unit-article .list-category {
-  margin-bottom: 0;
-  text-transform: capitalize;
-}
-
-.unit-article .list-tag {
-  text-transform: capitalize;
-}
-
-.unit-article .comment a {
-  border-bottom: 0;
-}
-
-.unit-article .unit-foot {
-  border-top: 5px solid rgba(21, 25, 25, 0.8);
-  padding-top: 1.625em;
-  position: relative;
-}
-
-.unit-article .unit-foot nav ul {
-  list-style: none;
-}
-
-.unit-article .unit-foot nav ul li {
-  display: inline;
-}
-
-.unit-article .unit-foot .gotop {
-  margin-bottom: 0;
 }
 
 /* Contain floats: h5bp.com/q */
