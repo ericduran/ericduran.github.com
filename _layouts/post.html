@@ -16,16 +16,14 @@ layout: default
       <div class="bd">
         <div class="entry-content">
           {{ content }}
-
           {% include meta.html %}
         </div><!-- entry-content -->
-        <div class="social">
-          <ul class="list-linear">
-            <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="{{ site.author.twitter }}" data-lang="en">Tweet</a></div></li>
-            <li><div class="twitter-follow"><a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-          </ul>
-        </div>
+
+        {% include social.html %}
+
         <div class="comment">
+           <div id="disqus_thread"></div>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
         </div>
       </div><!-- bd -->
       <footer class="unit-foot">
