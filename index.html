@@ -3,19 +3,17 @@ layout: default
 title: doing things on the web
 ---
 
-<section class="latest-post">
-  {% for post in site.posts limit:1 %}
-    <article>
+  <section class="latest-post">
+    {% for post in site.posts limit:1 %}
       {% include article.html %}
-    </article>
-  {% endfor %}
-</section>
+    {% endfor %}
+  </section>
 
-<section class="recent-posts">
-  <h2 class="recent">Recent Post</h2>
-  <ul id="recent-posts">
-  {% for post in site.posts offset:1 limit:20 %}
-    <li><span>{{ post.date | date_to_string }} - </span><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-  </ul>
-</section>
+  <section class="recent-posts">
+    <h2 class="recent">Recent Post</h2>
+    <ul id="recent-posts">
+    {% for post in site.posts offset:1 limit:20 %}
+      <li><span>{{ post.date | date_to_string }} - </span><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </section>
