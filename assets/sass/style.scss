@@ -15,9 +15,9 @@ $breakpoint-xl: min-width 1410px;
   font-family: 'UbuntuMono-B';
   src: url('/assets/font/UbuntuMono-B-webfont.eot');
   src: url('/assets/font/UbuntuMono-B-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/assets/themes/the-program/font/UbuntuMono-B-webfont.woff') format('woff'),
-       url('/assets/themes/the-program/font/UbuntuMono-B-webfont.ttf') format('truetype'),
-       url('/assets/themes/the-program/font/UbuntuMono-B-webfont.svg#UbuntuMono-B') format('svg');
+       url('/assets/font/UbuntuMono-B-webfont.woff') format('woff'),
+       url('/assets/font/UbuntuMono-B-webfont.ttf') format('truetype'),
+       url('/assets/font/UbuntuMono-B-webfont.svg#UbuntuMono-B') format('svg');
   font-weight: normal !important;
   font-style: normal;
 }
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  background: url('/assets/themes/the-program/skin/100-90-5-monochrome.png');
+  background: url('/assets/img/100-90-5-monochrome.png');
   background-repeat: repeat;
   background-position: 0 0;
   background-color: #e2e2de;
