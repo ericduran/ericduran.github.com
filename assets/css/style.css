@@ -251,112 +251,213 @@ nav ul, nav ol {
 
 /* HEADER
 ----------------------------------------------- */
-header {
+#main-header {
   padding: 26px;
   /*
    * Tablet
    */
 }
-header .logo {
+#main-header .logo {
   font-family: UbuntuMono-B, consolas, monaco, monospace;
   margin: 0;
 }
-header .logo a:visited {
+#main-header .logo a:visited {
   color: #2d2d2d;
 }
-header .nav-global {
+#main-header .nav-global {
   text-transform: uppercase;
 }
-header .nav-global .logo {
+#main-header .nav-global .logo {
   text-transform: none;
   display: block;
   width: auto;
 }
-header .nav-global .logo a {
+#main-header .nav-global .logo a {
   display: block;
   font-size: 30px;
   line-height: 52px;
   padding-bottom: 26px;
 }
 @media only screen and (min-width: 768px) {
-  header {
+  #main-header {
     padding: 0;
   }
-  header .nav-global li {
+  #main-header .nav-global li {
     float: left;
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-width: 0 1px 0 0;
   }
-  header .nav-global li a,
-  header .nav-global li div {
+  #main-header .nav-global li a,
+  #main-header .nav-global li div {
     display: block;
     padding: 26px;
     height: 26px;
   }
-  header .nav-global li a:hover {
+  #main-header .nav-global li a:hover {
     background-color: #fff04a;
     color: #474747;
   }
-  header .nav-global li:nth-child(2) {
+  #main-header .nav-global li:nth-child(2) {
     border-width: 0 1px;
   }
-  header .nav-global li:last-child {
+  #main-header .nav-global li:last-child {
     border-width: 0;
   }
-  header .nav-global .logo {
+  #main-header .nav-global .logo {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     border-right: none 0;
     display: block;
     width: 100%;
   }
-  header .nav-global .logo a {
+  #main-header .nav-global .logo a {
     font-size: 30px;
     line-height: normal;
   }
-  header .nav-global .logo a:hover {
+  #main-header .nav-global .logo a:hover {
     background-color: transparent;
   }
 }
+@media only screen and (min-width: 1280px) {
+  #main-header .unit-head .nav-global .logo {
+    border-bottom: 0 none;
+    display: block;
+    width: auto;
+  }
+  #main-header .unit-head .nav-global .logo a {
+    line-height: 18px;
+    margin-bottom: 0;
+    padding-left: 52px;
+  }
+}
+@media only screen and (min-width: 1410px) {
+  #main-header {
+    float: left;
+    width: 19%;
+  }
+  #main-header .unit-head {
+    padding: 26px;
+  }
+  #main-header .unit-head .nav-global li {
+    float: none;
+    border: none;
+  }
+  #main-header .unit-head .nav-global li a,
+  #main-header .unit-head .nav-global li div {
+    display: block;
+    padding: 2px 5px;
+    height: auto;
+  }
+  #main-header .unit-head .nav-global li:nth-child(2) {
+    border-width: 0;
+  }
+  #main-header .unit-head .nav-global .logo {
+    border-bottom: none 0;
+    display: list-item;
+    width: auto;
+  }
+  #main-header .unit-head .nav-global .logo a {
+    display: block;
+    font-size: 30px;
+    line-height: 52px;
+    margin-bottom: 26px;
+    padding-left: 5px;
+    position: relative;
+    top: auto;
+  }
+}
 
+/* MAIN
+----------------------------------------------- */
+.main-content .unit-body {
+  background-color: #fafafa;
+}
+@media only screen and (min-width: 1280px) {
+  .main-content {
+    float: left;
+    width: 100%;
+    margin-right: -450px;
+  }
+  .main-content .unit-body {
+    border-top: 0 none;
+    margin-right: 450px;
+    padding: 26px 52px;
+  }
+}
+@media only screen and (min-width: 1410px) {
+  .main-content {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: #ffffff 0px 0px 2px;
+    -moz-box-shadow: #ffffff 0px 0px 2px;
+    -o-box-shadow: #ffffff 0px 0px 2px;
+    float: left;
+    width: 81%;
+    margin-right: -450px;
+  }
+}
+
+/*
+  Huge-screen layout
+*/
+@media only screen and (min-width: 1410px) {
+  .body {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: #ffffff 0px 0px 2px;
+    -moz-box-shadow: #ffffff 0px 0px 2px;
+    -o-box-shadow: #ffffff 0px 0px 2px;
+    float: left;
+    width: 81%;
+    margin-right: -450px;
+  }
+
+  .body .unit-body {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: #ffffff 0px 0px 2px;
+    -moz-box-shadow: #ffffff 0px 0px 2px;
+    -o-box-shadow: #ffffff 0px 0px 2px;
+    margin-right: 450px;
+    padding: 26px 52px;
+    min-height: 1050px;
+  }
+}
 /* FOOTER
 ----------------------------------------------- */
-footer {
+#main-footer {
   background-color: #1a1a1a;
   background-color: rgba(21, 25, 25, 0.8);
   color: #fafafa;
   color: rgba(250, 250, 250, 0.8);
   padding: 26px;
 }
-footer a:link {
+#main-footer a:link {
   color: #c26164;
   border: 0;
 }
-footer a:visited {
+#main-footer a:visited {
   color: #ad4346;
   border: 0;
 }
-footer a:hover {
+#main-footer a:hover {
   color: #d08688;
   border: 0;
 }
-footer address {
+#main-footer address {
   font-style: normal;
 }
-footer h4 {
+#main-footer h4 {
   margin-top: 0;
 }
-footer ul {
+#main-footer ul {
   list-style: square;
   padding-left: 1em;
 }
-footer .license {
+#main-footer .license {
   clear: both;
 }
-footer .license p {
+#main-footer .license p {
   margin-bottom: 0;
 }
 @media only screen and (min-width: 1280px) {
-  footer {
+  #main-footer {
     background-color: transparent;
     color: #2d2d2d;
     position: relative;
@@ -368,7 +469,7 @@ footer .license p {
   }
 }
 @media only screen and (min-width: 1410px) {
-  footer {
+  #main-footer {
     position: relative;
     top: auto;
     display: block;
@@ -376,7 +477,7 @@ footer .license p {
     padding: 26px 0 0 26px;
     width: 420px;
   }
-  footer h4 {
+  #main-footer h4 {
     font-size: 30px;
     line-height: 52px;
     margin-top: 0;
@@ -490,10 +591,6 @@ em {
 
 .list-linear li:last-child {
   margin-right: 0;
-}
-
-.body .unit-body {
-  background-color: #fafafa;
 }
 
 /* MAIN
@@ -713,99 +810,6 @@ em {
   margin-bottom: 0;
 }
 
-/*
-  Not that old computer layout
-*/
-@media only screen and (min-width: 1280px) {
-  .the-header .unit-head .nav-global .logo {
-    border-bottom: 0 none;
-    display: block;
-    width: auto;
-  }
-
-  .the-header .unit-head .nav-global .logo a {
-    line-height: 18px;
-    margin-bottom: 0;
-    padding-left: 52px;
-  }
-
-  .body {
-    float: left;
-    width: 100%;
-    margin-right: -450px;
-  }
-
-  .body .unit-body {
-    border-top: 0 none;
-    margin-right: 450px;
-    padding: 26px 52px;
-  }
-}
-/*
-  Huge-screen layout
-*/
-@media only screen and (min-width: 1410px) {
-  .the-header {
-    float: left;
-    width: 19%;
-  }
-
-  .the-header .unit-head {
-    padding: 26px;
-  }
-
-  .the-header .unit-head .nav-global li {
-    float: none;
-    border: none;
-  }
-
-  .the-header .unit-head .nav-global li a,
-  .the-header .unit-head .nav-global li div {
-    display: block;
-    padding: 2px 5px;
-    height: auto;
-  }
-
-  .the-header .unit-head .nav-global li:nth-child(2) {
-    border-width: 0;
-  }
-
-  .the-header .unit-head .nav-global .logo {
-    border-bottom: none 0;
-    display: list-item;
-    width: auto;
-  }
-
-  .the-header .unit-head .nav-global .logo a {
-    display: block;
-    font-size: 30px;
-    line-height: 52px;
-    margin-bottom: 26px;
-    padding-left: 5px;
-    position: relative;
-    top: auto;
-  }
-
-  .body {
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: #ffffff 0px 0px 2px;
-    -moz-box-shadow: #ffffff 0px 0px 2px;
-    -o-box-shadow: #ffffff 0px 0px 2px;
-    float: left;
-    width: 81%;
-    margin-right: -450px;
-  }
-
-  .body .unit-body {
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: #ffffff 0px 0px 2px;
-    -moz-box-shadow: #ffffff 0px 0px 2px;
-    -o-box-shadow: #ffffff 0px 0px 2px;
-    margin-right: 450px;
-    padding: 26px 52px;
-    min-height: 1050px;
-  }
-}
 /* Contain floats: h5bp.com/q */
 .cf:before,
 .cf:after,
