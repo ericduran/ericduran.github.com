@@ -245,16 +245,16 @@ nav ul, nav ol {
     #{headings()} {
       color: #2d2d2d;
       a {
-        :link {
+        &:link {
           color: #2d2d2d;
           border: 0;
         }
 
-        :visited{
+        &:visited{
           color: #141414;
           border: 0;
         }
-        :hover {
+        &:hover {
           color: #474747;
           border: 0;
         }
