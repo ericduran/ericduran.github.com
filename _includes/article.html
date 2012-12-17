@@ -1,23 +1,19 @@
 
-<article class="unit-article">
+<article class="unit-article blog-post">
   <div class="unit-inner">
-    <div class="content">
-      <header>
-        <div class="unit-head">
-          <div class="unit-inner">
-            <h1 class="h2 entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-          </div><!-- unit-inner -->
-        </div><!-- unit-head -->
-      </header>
+    <header>
+      <div class="unit-head">
+        <div class="unit-inner">
+          <h1 class="h2 entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        </div><!-- unit-inner -->
+      </div><!-- unit-head -->
+    </header>
 
-      <div class="entry-content">
-        {{ post.content }}
+    <div class="content entry-content">
+      {{ post.content }}
+      {% include meta.html %}
+    </div>
 
-        {% include meta.html %}
-
-      </div><!-- entry-content -->
-
-      {% include social.html %}
-    </div><!-- content -->
+    {% include social.html %}
   </div><!-- unit-inner -->
 </article>

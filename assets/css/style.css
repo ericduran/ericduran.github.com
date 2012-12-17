@@ -404,6 +404,33 @@ nav ul, nav ol {
   }
 }
 
+/* Blog Post
+----------------------------------------------- */
+.blog-post header {
+  border-bottom: 5px solid rgba(21, 25, 25, 0.8);
+  margin-bottom: 21px;
+}
+.blog-post header h1 {
+  color: #2d2d2d;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.blog-post .content h1, .blog-post .content h2, .blog-post .content h3, .blog-post .content h4, .blog-post .content h5, .blog-post .content h6 {
+  color: #2d2d2d;
+}
+.blog-post .content h1 a :link, .blog-post .content h2 a :link, .blog-post .content h3 a :link, .blog-post .content h4 a :link, .blog-post .content h5 a :link, .blog-post .content h6 a :link {
+  color: #2d2d2d;
+  border: 0;
+}
+.blog-post .content h1 a :visited, .blog-post .content h2 a :visited, .blog-post .content h3 a :visited, .blog-post .content h4 a :visited, .blog-post .content h5 a :visited, .blog-post .content h6 a :visited {
+  color: #141414;
+  border: 0;
+}
+.blog-post .content h1 a :hover, .blog-post .content h2 a :hover, .blog-post .content h3 a :hover, .blog-post .content h4 a :hover, .blog-post .content h5 a :hover, .blog-post .content h6 a :hover {
+  color: #474747;
+  border: 0;
+}
+
 /* FOOTER
 ----------------------------------------------- */
 #main-footer {
@@ -580,52 +607,6 @@ em {
 
 /* MAIN
 --------------------------------------------------------------------------------- */
-.unit-article header {
-  border-bottom: 5px solid rgba(21, 25, 25, 0.8);
-  margin-bottom: 21px;
-}
-
-.unit-article header h1 {
-  color: #2d2d2d;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.unit-article .entry-content h2,
-.unit-article .entry-content h3,
-.unit-article .entry-content h4,
-.unit-article .entry-content h5,
-.unit-article .entry-content h6 {
-  color: #2d2d2d;
-}
-
-.unit-article .entry-content h2 a:link,
-.unit-article .entry-content h3 a:link,
-.unit-article .entry-content h4 a:link,
-.unit-article .entry-content h5 a:link,
-.unit-article .entry-content h6 a:link {
-  color: #2d2d2d;
-  border: 0;
-}
-
-.unit-article .entry-content h2 a:visited,
-.unit-article .entry-content h3 a:visited,
-.unit-article .entry-content h4 a:visited,
-.unit-article .entry-content h5 a:visited,
-.unit-article .entry-content h6 a:visited {
-  color: #141414;
-  border: 0;
-}
-
-.unit-article .entry-content h2 a:hover,
-.unit-article .entry-content h3 a:hover,
-.unit-article .entry-content h4 a:hover,
-.unit-article .entry-content h5 a:hover,
-.unit-article .entry-content h6 a:hover {
-  color: #474747;
-  border: 0;
-}
-
 .unit-article .entry-content:first-child h2,
 .unit-article .entry-content:first-child h3,
 .unit-article .entry-content:first-child h4,
@@ -644,88 +625,6 @@ em {
 
 .unit-article a:hover {
   border-bottom: 1px dashed #d08688;
-}
-
-.unit-article blockquote {
-  border-left: 1em solid rgba(21, 25, 25, 0.8);
-  padding-left: 1em;
-}
-
-.unit-article blockquote p {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.unit-article ul,
-.unit-article ol,
-.unit-article dl {
-  padding-left: 0;
-}
-
-.unit-article ul {
-  list-style: square;
-}
-
-.unit-article ol {
-  list-style: decimal;
-}
-
-.unit-article li h1,
-.unit-article dt h1,
-.unit-article dd h1,
-.unit-article li h2,
-.unit-article dt h2,
-.unit-article dd h2,
-.unit-article li h3,
-.unit-article dt h3,
-.unit-article dd h3,
-.unit-article li h4,
-.unit-article dt h4,
-.unit-article dd h4,
-.unit-article li h5,
-.unit-article dt h5,
-.unit-article dd h5,
-.unit-article li p,
-.unit-article dt p,
-.unit-article dd p,
-.unit-article li ul,
-.unit-article dt ul,
-.unit-article dd ul,
-.unit-article li ol,
-.unit-article dt ol,
-.unit-article dd ol,
-.unit-article li dl,
-.unit-article dt dl,
-.unit-article dd dl,
-.unit-article li blockquote,
-.unit-article dt blockquote,
-.unit-article dd blockquote,
-.unit-article li .hasGrid,
-.unit-article dt .hasGrid,
-.unit-article dd .hasGrid {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.unit-article p code,
-.unit-article li code {
-  padding: 2px 5px;
-  white-space: nowrap;
-  background-color: #fff04a;
-}
-
-.unit-article img {
-  display: block;
-  margin-left: auto;
-  margin-left: auto;
-}
-
-.unit-article img.left {
-  margin-right: 16px;
-}
-
-.unit-article img.right {
-  margin-left: 16px;
 }
 
 .unit-article .date-publish {
