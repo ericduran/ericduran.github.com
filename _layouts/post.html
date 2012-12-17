@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="unit-article">
-  <div class="unit-inner unit-article-inner">
+  <div class="unit-inner">
     <div class="content">
       <header>
         <div class="unit-head">
@@ -13,19 +13,17 @@ layout: default
         </div><!-- unit-head -->
       </header>
 
-      <div class="bd">
-        <div class="entry-content">
-          {{ content }}
-          {% include meta.html %}
-        </div><!-- entry-content -->
+      <div class="entry-content">
+        {{ content }}
+        {% include meta.html %}
+      </div><!-- entry-content -->
 
-        {% include social.html %}
+      {% include social.html %}
 
-        <div class="comment">
-           <div id="disqus_thread"></div>
-            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </div>
-      </div><!-- bd -->
+      <div class="comment">
+         <div id="disqus_thread"></div>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
       <footer class="unit-foot">
         <div class="unit-inner  ">
           <nav class="pagination">

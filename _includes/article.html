@@ -1,6 +1,6 @@
 
 <article class="unit-article">
-  <div class="unit-inner unit-article-inner">
+  <div class="unit-inner">
     <div class="content">
       <header>
         <div class="unit-head">
@@ -10,17 +10,14 @@
         </div><!-- unit-head -->
       </header>
 
-      <div class="bd">
-        <div class="entry-content">
-          {{ post.content }}
+      <div class="entry-content">
+        {{ post.content }}
 
-          {% include meta.html %}
+        {% include meta.html %}
 
-        </div><!-- entry-content -->
+      </div><!-- entry-content -->
 
-        {% include social.html %}
-
-      </div><!-- bd -->
+      {% include social.html %}
     </div><!-- content -->
   </div><!-- unit-inner -->
 </article>
