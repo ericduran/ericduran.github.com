@@ -347,21 +347,7 @@ nav ul, nav ol {
   }
 }
 
-
-
-
-
-
-
-
-
-/******* NEEDS REVIEW ********/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#{headings()} {
   font-family: UbuntuMono-B, consolas, monaco, monospace;
 }
 
