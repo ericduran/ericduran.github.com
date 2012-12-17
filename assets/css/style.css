@@ -419,6 +419,20 @@ nav ul, nav ol {
   margin-top: 0;
   margin-bottom: 0;
 }
+.blog-post footer {
+  border-top: 5px solid rgba(21, 25, 25, 0.8);
+  padding-top: 1.625em;
+  position: relative;
+}
+.blog-post footer nav ul {
+  list-style: none;
+}
+.blog-post footer nav ul li {
+  display: inline;
+}
+.blog-post footer .gotop {
+  margin-bottom: 0;
+}
 .blog-post a:link {
   border-bottom: 1px dashed #c26164;
 }
@@ -468,20 +482,6 @@ nav ul, nav ol {
 }
 .blog-post .comment a {
   border-bottom: 0;
-}
-.blog-post .unit-foot {
-  border-top: 5px solid rgba(21, 25, 25, 0.8);
-  padding-top: 1.625em;
-  position: relative;
-}
-.blog-post .unit-foot nav ul {
-  list-style: none;
-}
-.blog-post .unit-foot nav ul li {
-  display: inline;
-}
-.blog-post .unit-foot .gotop {
-  margin-bottom: 0;
 }
 .blog-post .content :first-child h2, .blog-post .content:first-child h3, .blog-post .content:first-child h4, .blog-post .content:first-child h5, .blog-post .content:first-child h6 {
   margin-top: 0;

@@ -248,6 +248,24 @@ nav ul, nav ol {
     margin-bottom: 0;
   }
 
+  footer {
+    border-top: 5px solid rgba(21, 25, 25, 0.8);
+    padding-top: 1.625em;
+    position: relative;
+
+    nav ul {
+      list-style: none;
+
+      li {
+        display: inline;
+      }
+    }
+
+    .gotop {
+      margin-bottom: 0;
+    }
+  }
+
   a:link {
     border-bottom: 1px dashed #c26164;
   }
@@ -299,20 +317,6 @@ nav ul, nav ol {
   }
   .comment a {
     border-bottom: 0;
-  }
-  .unit-foot {
-    border-top: 5px solid rgba(21, 25, 25, 0.8);
-    padding-top: 1.625em;
-    position: relative;
-  }
-  .unit-foot nav ul {
-    list-style: none;
-  }
-  .unit-foot nav ul li {
-    display: inline;
-  }
-  .unit-foot .gotop {
-    margin-bottom: 0;
   }
 
   .content {
