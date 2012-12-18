@@ -559,6 +559,10 @@ nav ul, nav ol {
 #main-footer .license p {
   margin-bottom: 0;
 }
+#main-footer .social-follow > div {
+  display: inline-block;
+  vertical-align: top;
+}
 @media only screen and (min-width: 1280px) {
   #main-footer {
     background-color: transparent;

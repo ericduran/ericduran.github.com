@@ -429,6 +429,11 @@ nav ul, nav ol {
     margin-bottom: 0;
   }
 
+  .social-follow > div {
+    display: inline-block;
+    vertical-align: top;
+  }
+
   @media only screen and (min-width: 1280px) {
     background-color: transparent;
     color: #2d2d2d;
