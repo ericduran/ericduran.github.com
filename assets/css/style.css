@@ -291,17 +291,24 @@ nav ul, nav ol {
     border-bottom: 0 none;
     border-right: none 0;
     display: block;
-    width: auto;
-  }
-  #main-header .logo .moto {
     padding-left: 26px;
+    width: auto;
   }
   #main-header .logo a {
     margin-bottom: 0;
-    padding-left: 26px;
+  }
+  #main-header .logo .moto {
+    -moz-transition: padding .3s linear;
+    -webkit-transition: padding .3s linear;
+    transition: padding .3s linear;
   }
   #main-header .logo a:hover {
     background-color: transparent;
+  }
+  #main-header .nav-global {
+    -moz-transition: padding .5s linear;
+    -webkit-transition: padding .5s linear;
+    transition: padding .5s linear;
   }
   #main-header .nav-global li {
     float: left;
@@ -309,7 +316,7 @@ nav ul, nav ol {
   #main-header .nav-global li a,
   #main-header .nav-global li div {
     display: block;
-    padding: 26px;
+    padding: 0 26px;
     height: 26px;
   }
   #main-header .nav-global li a:hover {
@@ -331,10 +338,10 @@ nav ul, nav ol {
   }
   #main-header .logo a {
     margin-bottom: 0;
-    padding-left: 52px;
+    padding-left: 26px;
   }
   #main-header .logo .moto {
-    padding-left: 52px;
+    padding-left: 26px;
   }
   #main-header .nav-global {
     padding-left: 28px;
@@ -350,6 +357,7 @@ nav ul, nav ol {
     border-bottom: none 0;
     padding-bottom: 26px;
     width: auto;
+    padding-left: 0;
   }
   #main-header .logo a {
     display: block;
@@ -363,9 +371,15 @@ nav ul, nav ol {
   }
   #main-header .logo .moto {
     padding-left: 5px;
+    -moz-transition: none;
+    -webkit-transition: none;
+    transition: none;
   }
   #main-header .nav-global {
     padding-left: 0;
+    -moz-transition: none;
+    -webkit-transition: none;
+    transition: none;
   }
   #main-header .nav-global li {
     float: none;
