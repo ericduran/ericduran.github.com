@@ -503,6 +503,10 @@ nav ul, nav ol {
 .blog-post .comment a {
   border-bottom: 0;
 }
+.blog-post .social {
+  padding-top: 10px;
+  text-align: right;
+}
 .blog-post .content :first-child h2, .blog-post .content:first-child h3, .blog-post .content:first-child h4, .blog-post .content:first-child h5, .blog-post .content:first-child h6 {
   margin-top: 0;
 }
