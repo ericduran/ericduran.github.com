@@ -123,10 +123,7 @@ nav ul, nav ol {
       }
     }
     .logo a {
-      font-size: 30px;
-      line-height: 18px;
       margin-bottom: 0;
-      padding-bottom: 0;
       padding-left: 26px;
     }
 
@@ -137,8 +134,6 @@ nav ul, nav ol {
     .nav-global {
       li {
         float: left;
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        border-width: 0 1px 0 0;
       }
       li a,
       li div {
@@ -166,7 +161,6 @@ nav ul, nav ol {
       width: auto;
 
       a {
-        line-height: 18px;
         margin-bottom: 0;
         padding-left: 52px;
       }
