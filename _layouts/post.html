@@ -10,11 +10,27 @@ layout: default
 
       <div class="entry-content content">
         {{ content }}
-        {% include meta.html %}
+        <div class="meta">
+          <p class="date-publish">
+            Published:
+            <date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
+            <span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
+            <span class="day">{{ page.date | date: '%d' }}</span>
+            <span class="year">{{ page.date | date: '%Y' }}</span>
+            </date>
+          </p>
+        </div>
       </div><!-- entry-content -->
-
-      {% include social.html %}
-
+      <div class="social">
+        <ul class="list-linear">
+          <li><div class="g-plusone" data-size="medium" data-href="http://ericduran.github.com{{ page.url }}"></div></li>
+          <li>
+              <div class="twitter-tweet">
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://ericduran.github.com{{ page.url }}" data-count="horizontal" data-via="ericjduran" data-lang="en">Tweet</a>
+              </div>
+          </li>
+        </ul>
+      </div>
       <div class="comment">
          <div id="disqus_thread"></div>
           <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
