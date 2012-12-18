@@ -209,6 +209,12 @@ table {
 
 /* GENERIC
 ----------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
   color: #2d2d2d;
 }
@@ -246,11 +252,6 @@ nav ul, nav ol {
   list-style-image: none;
   margin: 0;
   padding: 0;
-}
-
-.body .unit-body {
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
-  padding: 26px;
 }
 
 /* HEADER
@@ -322,12 +323,12 @@ nav ul, nav ol {
   }
 }
 @media only screen and (min-width: 1280px) {
-  #main-header .unit-head .nav-global .logo {
+  #main-header .nav-global .logo {
     border-bottom: 0 none;
     display: block;
     width: auto;
   }
-  #main-header .unit-head .nav-global .logo a {
+  #main-header .nav-global .logo a {
     line-height: 18px;
     margin-bottom: 0;
     padding-left: 52px;
@@ -336,30 +337,28 @@ nav ul, nav ol {
 @media only screen and (min-width: 1410px) {
   #main-header {
     float: left;
+    padding: 26px;
     width: 19%;
   }
-  #main-header .unit-head {
-    padding: 26px;
-  }
-  #main-header .unit-head .nav-global li {
+  #main-header .nav-global li {
     float: none;
     border: none;
   }
-  #main-header .unit-head .nav-global li a,
-  #main-header .unit-head .nav-global li div {
+  #main-header .nav-global li a,
+  #main-header .nav-global li div {
     display: block;
     padding: 2px 5px;
     height: auto;
   }
-  #main-header .unit-head .nav-global li:nth-child(2) {
+  #main-header .nav-global li:nth-child(2) {
     border-width: 0;
   }
-  #main-header .unit-head .nav-global .logo {
+  #main-header .nav-global .logo {
     border-bottom: none 0;
     display: list-item;
     width: auto;
   }
-  #main-header .unit-head .nav-global .logo a {
+  #main-header .nav-global .logo a {
     display: block;
     font-size: 30px;
     line-height: 52px;
@@ -374,6 +373,8 @@ nav ul, nav ol {
 ----------------------------------------------- */
 .main-content .unit-body {
   background-color: #fafafa;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 26px;
 }
 @media only screen and (min-width: 1280px) {
   .main-content {

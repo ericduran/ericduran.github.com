@@ -5,7 +5,8 @@ $legacy-support-for-ie8: false;
 $legacy-support-for-mozilla: false;
 
 // Breakpoints vars
-$breakpoint-tablets: min-width 768px;
+$breakpoint-m: min-width 768px;
+$breakpoint-l: min-width 1280px;
 $breakpoint-xl: min-width 1410px;
 
 @import "normalize";
@@ -24,6 +25,13 @@ $breakpoint-xl: min-width 1410px;
 
 /* GENERIC
 ----------------------------------------------- */
+
+* {
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
 html {
   color: #2d2d2d;
 }
@@ -63,11 +71,6 @@ nav ul, nav ol {
   list-style-image: none;
   margin: 0;
   padding: 0;
-}
-
-.body .unit-body {
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
-  padding: 26px;
 }
 
 /* HEADER
@@ -145,12 +148,12 @@ nav ul, nav ol {
   }
 
   @media only screen and (min-width: 1280px) {
-    .unit-head .nav-global .logo {
+    .nav-global .logo {
       border-bottom: 0 none;
       display: block;
       width: auto;
     }
-    .unit-head .nav-global .logo a {
+    .nav-global .logo a {
       line-height: 18px;
       margin-bottom: 0;
       padding-left: 52px;
@@ -159,30 +162,28 @@ nav ul, nav ol {
 
   @media only screen and (min-width: 1410px) {
     float: left;
+    padding: 26px;
     width: 19%;
 
-    .unit-head {
-      padding: 26px;
-    }
-    .unit-head .nav-global li {
+    .nav-global li {
       float: none;
       border: none;
     }
-    .unit-head .nav-global li a,
-    .unit-head .nav-global li div {
+    .nav-global li a,
+    .nav-global li div {
       display: block;
       padding: 2px 5px;
       height: auto;
     }
-    .unit-head .nav-global li:nth-child(2) {
+    .nav-global li:nth-child(2) {
       border-width: 0;
     }
-    .unit-head .nav-global .logo {
+    .nav-global .logo {
       border-bottom: none 0;
       display: list-item;
       width: auto;
     }
-    .unit-head .nav-global .logo a {
+    .nav-global .logo a {
       display: block;
       font-size: 30px;
       line-height: 52px;
@@ -200,6 +201,8 @@ nav ul, nav ol {
 
   .unit-body {
     background-color: #fafafa;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 26px;
   }
 
   @media only screen and (min-width: 1280px) {
