@@ -111,39 +111,41 @@ nav ul, nav ol {
   @media only screen and (min-width: 768px) {
     padding: 0;
 
-    .nav-global li {
-      float: left;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      border-width: 0 1px 0 0;
-    }
-    .nav-global li a,
-    .nav-global li div {
-      display: block;
-      padding: 26px;
-      height: 26px;
-    }
-    .nav-global li a:hover {
-      background-color: #fff04a;
-      color: #474747;
-    }
-    .nav-global li:nth-child(2) {
-      border-width: 0 1px;
-    }
-    .nav-global li:last-child {
-      border-width: 0;
-    }
-    .nav-global .logo {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-      border-right: none 0;
-      display: block;
-      width: 100%;
-    }
-    .nav-global .logo a {
-      font-size: 30px;
-      line-height: normal;
-    }
-    .nav-global .logo a:hover {
-      background-color: transparent;
+    .nav-global {
+      li {
+        float: left;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-width: 0 1px 0 0;
+      }
+      li a,
+      li div {
+        display: block;
+        padding: 26px;
+        height: 26px;
+      }
+      li a:hover {
+        background-color: #fff04a;
+        color: #474747;
+      }
+      li:nth-child(2) {
+        border-width: 0 1px;
+      }
+      li:last-child {
+        border-width: 0;
+      }
+      .logo {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-right: none 0;
+        display: block;
+        width: 100%;
+      }
+      .logo a {
+        font-size: 30px;
+        line-height: normal;
+      }
+      .logo a:hover {
+        background-color: transparent;
+      }
     }
   }
 
@@ -165,32 +167,34 @@ nav ul, nav ol {
     padding: 26px;
     width: 19%;
 
-    .nav-global li {
-      float: none;
-      border: none;
-    }
-    .nav-global li a,
-    .nav-global li div {
-      display: block;
-      padding: 2px 5px;
-      height: auto;
-    }
-    .nav-global li:nth-child(2) {
-      border-width: 0;
-    }
-    .nav-global .logo {
-      border-bottom: none 0;
-      display: list-item;
-      width: auto;
-    }
-    .nav-global .logo a {
-      display: block;
-      font-size: 30px;
-      line-height: 52px;
-      margin-bottom: 26px;
-      padding-left: 5px;
-      position: relative;
-      top: auto;
+    .nav-global {
+      li {
+        float: none;
+        border: none;
+      }
+      li a,
+      li div {
+        display: block;
+        padding: 2px 5px;
+        height: auto;
+      }
+      li:nth-child(2) {
+        border-width: 0;
+      }
+      .logo {
+        border-bottom: none 0;
+        display: list-item;
+        width: auto;
+      }
+      .logo a {
+        display: block;
+        font-size: 30px;
+        line-height: 52px;
+        margin-bottom: 26px;
+        padding-left: 5px;
+        position: relative;
+        top: auto;
+      }
     }
   }
 }
