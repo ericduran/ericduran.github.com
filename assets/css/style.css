@@ -309,14 +309,16 @@ nav ul, nav ol {
     border-width: 0;
   }
   #main-header .nav-global .logo {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 0 none;
     border-right: none 0;
     display: block;
-    width: 100%;
+    width: auto;
   }
   #main-header .nav-global .logo a {
     font-size: 30px;
-    line-height: normal;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding-left: 52px;
   }
   #main-header .nav-global .logo a:hover {
     background-color: transparent;
@@ -578,13 +580,7 @@ nav ul, nav ol {
   }
 }
 h1,
-.h1 {
-  font-size: 30px;
-  line-height: 52px;
-  margin-top: 52px;
-  margin-bottom: 26px;
-}
-
+.h1,
 h2,
 .h2 {
   font-size: 30px;
@@ -609,31 +605,20 @@ h4,
   margin-bottom: 26px;
 }
 
-p,
-ul,
-ol,
-dl,
+p, ul,
+ol, dl,
 img {
   margin-top: 0;
   margin-bottom: 1.625em;
 }
 
-small,
-.small,
+small, .small,
 aside {
   font-size: 0.75em;
 }
 
 .font-size-default {
   font-size: 1em;
-}
-
-blockquote {
-  font-weight: bold;
-}
-
-blockquote cite {
-  font-weight: normal;
 }
 
 strong {
@@ -672,7 +657,7 @@ em {
 .cf:after,
 .unit-inner:before,
 .unit-inner:after,
-#page:before,
+#pagepage:before,
 #page:after {
   content: "";
   display: table;
