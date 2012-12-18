@@ -269,23 +269,42 @@ nav ul, nav ol {
 #main-header .logo a:visited {
   color: #2d2d2d;
 }
-#main-header .nav-global {
-  text-transform: uppercase;
-}
-#main-header .nav-global .logo {
+#main-header .logo {
   text-transform: none;
   display: block;
+  padding-bottom: 10px;
   width: auto;
 }
-#main-header .nav-global .logo a {
+#main-header .logo a {
   display: block;
   font-size: 30px;
-  line-height: 52px;
-  padding-bottom: 26px;
+}
+#main-header .nav-global {
+  text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) {
   #main-header {
     padding: 0;
+    padding-top: 26px;
+  }
+  #main-header .logo {
+    border-bottom: 0 none;
+    border-right: none 0;
+    display: block;
+    width: auto;
+  }
+  #main-header .logo .moto {
+    padding-left: 26px;
+  }
+  #main-header .logo a {
+    font-size: 30px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 26px;
+  }
+  #main-header .logo a:hover {
+    background-color: transparent;
   }
   #main-header .nav-global li {
     float: left;
@@ -308,32 +327,23 @@ nav ul, nav ol {
   #main-header .nav-global li:last-child {
     border-width: 0;
   }
-  #main-header .nav-global .logo {
-    border-bottom: 0 none;
-    border-right: none 0;
-    display: block;
-    width: auto;
-  }
-  #main-header .nav-global .logo a {
-    font-size: 30px;
-    line-height: 18px;
-    margin-bottom: 0;
-    padding-left: 52px;
-  }
-  #main-header .nav-global .logo a:hover {
-    background-color: transparent;
-  }
 }
 @media only screen and (min-width: 1280px) {
-  #main-header .nav-global .logo {
+  #main-header .logo {
     border-bottom: 0 none;
     display: block;
     width: auto;
   }
-  #main-header .nav-global .logo a {
+  #main-header .logo a {
     line-height: 18px;
     margin-bottom: 0;
     padding-left: 52px;
+  }
+  #main-header .logo .moto {
+    padding-left: 52px;
+  }
+  #main-header .nav-global {
+    padding-left: 28px;
   }
 }
 @media only screen and (min-width: 1410px) {
@@ -341,6 +351,27 @@ nav ul, nav ol {
     float: left;
     padding: 26px;
     width: 19%;
+  }
+  #main-header .logo {
+    border-bottom: none 0;
+    padding-bottom: 26px;
+    width: auto;
+  }
+  #main-header .logo a {
+    display: block;
+    font-size: 30px;
+    line-height: 32px;
+    padding-bottom: 0;
+    padding-left: 5px;
+    padding-top: 6px;
+    position: relative;
+    top: auto;
+  }
+  #main-header .logo .moto {
+    padding-left: 5px;
+  }
+  #main-header .nav-global {
+    padding-left: 0;
   }
   #main-header .nav-global li {
     float: none;
@@ -354,20 +385,6 @@ nav ul, nav ol {
   }
   #main-header .nav-global li:nth-child(2) {
     border-width: 0;
-  }
-  #main-header .nav-global .logo {
-    border-bottom: none 0;
-    display: list-item;
-    width: auto;
-  }
-  #main-header .nav-global .logo a {
-    display: block;
-    font-size: 30px;
-    line-height: 52px;
-    margin-bottom: 26px;
-    padding-left: 5px;
-    position: relative;
-    top: auto;
   }
 }
 
