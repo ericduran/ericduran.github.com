@@ -1,7 +1,9 @@
+
 /**
  *
  */
 module.exports = function(grunt) {
+  grunt.loadNpmTasks( 'grunt-compass' );
 
   // Project configuration.
   grunt.initConfig({
@@ -27,9 +29,18 @@ module.exports = function(grunt) {
         strict: false
       },
       globals: {}
+    },
+    watch: {
+      files: ['assets/sass/*.scss'],
+      tasks: ['compass:prod']
+    },
+    compass: {
+      prod: {
+        config: './config.rb'
+      }
     }
   });
 
   // Default task.
-  grunt.registerTask('default', 'lint');
+  grunt.registerTask('default', 'lint compass');
 };
