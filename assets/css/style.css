@@ -127,7 +127,7 @@ figure {
 
 /* normalize.css v2.0.1 | Forms | MIT License | git.io/normalize */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -135,6 +135,7 @@ fieldset {
 legend {
   border: 0;
   padding: 0;
+  white-space: normal;
 }
 
 button,
@@ -298,17 +299,17 @@ nav ul, nav ol {
     margin-bottom: 0;
   }
   #main-header .logo .moto {
-    -moz-transition: padding .3s linear;
-    -webkit-transition: padding .3s linear;
-    transition: padding .3s linear;
+    -moz-transition: padding 0.3s linear;
+    -webkit-transition: padding 0.3s linear;
+    transition: padding 0.3s linear;
   }
   #main-header .logo a:hover {
     background-color: transparent;
   }
   #main-header .nav-global {
-    -moz-transition: padding .5s linear;
-    -webkit-transition: padding .5s linear;
-    transition: padding .5s linear;
+    -moz-transition: padding 0.5s linear;
+    -webkit-transition: padding 0.5s linear;
+    transition: padding 0.5s linear;
   }
   #main-header .nav-global li {
     float: left;
@@ -418,18 +419,18 @@ nav ul, nav ol {
 @media only screen and (min-width: 1410px) {
   .main-content {
     border-left: 1px solid rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: #ffffff 0px 0px 2px;
-    -moz-box-shadow: #ffffff 0px 0px 2px;
-    -o-box-shadow: #ffffff 0px 0px 2px;
+    -webkit-box-shadow: white 0px 0px 2px;
+    -moz-box-shadow: white 0px 0px 2px;
+    -o-box-shadow: white 0px 0px 2px;
     float: left;
     width: 81%;
     margin-right: -450px;
   }
   .main-content .unit-body {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: #ffffff 0px 0px 2px;
-    -moz-box-shadow: #ffffff 0px 0px 2px;
-    -o-box-shadow: #ffffff 0px 0px 2px;
+    -webkit-box-shadow: white 0px 0px 2px;
+    -moz-box-shadow: white 0px 0px 2px;
+    -o-box-shadow: white 0px 0px 2px;
     margin-right: 450px;
     padding: 26px 52px;
     min-height: 1050px;
@@ -562,8 +563,8 @@ nav ul, nav ol {
   margin-top: 0;
 }
 #main-footer ul {
-  list-style: square;
-  padding-left: 1em;
+  list-style: none;
+  padding: 0;
 }
 #main-footer .license {
   clear: both;
