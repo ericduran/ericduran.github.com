@@ -1,15 +1,11 @@
 
 <article class="blog-post teaser">
-  <div class="unit-inner">
-    <header>
-      <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    </header>
+  <header>
+    <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  </header>
 
-    <div class="content entry-content">
-      {{ post.content }}
-      {% include meta.html %}
-    </div>
-
-    {% include social.html %}
-  </div><!-- unit-inner -->
+  <div class="content entry-content">
+    {{ post.content }}
+    {% include meta.html %}
+  </div>
 </article>
