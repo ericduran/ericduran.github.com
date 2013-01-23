@@ -9,8 +9,12 @@ $breakpoint-m: min-width 768px;
 $breakpoint-l: min-width 1280px;
 $breakpoint-xl: min-width 1410px;
 
+// Font-Awesome vars
+$fontAwesomePath:   "../font" !default;
+
 @import "normalize";
 @import "breakpoint";
+@import "font-awesome";
 
 @font-face {
   font-family: 'UbuntuMono-B';
@@ -424,6 +428,7 @@ nav ul, nav ol {
 
   address {
     font-style: normal;
+    padding-bottom: 10px;
   }
 
   h4 {
@@ -433,7 +438,12 @@ nav ul, nav ol {
   ul {
     list-style: none;
     padding: 0;
+
+    li {
+      display: inline-block;
+    }
   }
+
 
   .license {
     clear: both;
@@ -445,6 +455,10 @@ nav ul, nav ol {
   .social-follow > div {
     display: inline-block;
     vertical-align: top;
+  }
+
+  .social-title {
+    display: none;
   }
 
   @media only screen and (min-width: 1280px) {
