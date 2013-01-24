@@ -494,8 +494,9 @@ nav ul, nav ol {
 /*
  * Smartphone
  */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@include breakpoint($breakpoint-s) {
   img {
+    height: auto;
     max-width: 100%;
   }
 }
