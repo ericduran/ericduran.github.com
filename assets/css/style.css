@@ -1591,7 +1591,7 @@ nav ul, nav ol {
 #main-header .nav-global {
   text-transform: uppercase;
 }
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   #main-header {
     padding: 0;
     padding-top: 26px;
@@ -1639,7 +1639,7 @@ nav ul, nav ol {
     border-width: 0;
   }
 }
-@media only screen and (min-width: 1080px) {
+@media (min-width: 1080px) {
   #main-header .logo {
     border-bottom: 0 none;
     display: block;
@@ -1656,7 +1656,7 @@ nav ul, nav ol {
     padding-left: 28px;
   }
 }
-@media only screen and (min-width: 1450px) {
+@media (min-width: 1450px) {
   #main-header {
     float: left;
     padding: 26px;
@@ -1712,7 +1712,7 @@ nav ul, nav ol {
   border-top: 1px solid rgba(255, 255, 255, 0.6);
   padding: 26px;
 }
-@media only screen and (min-width: 1080px) {
+@media (min-width: 1080px) {
   .main-content {
     float: left;
     width: 100%;
@@ -1724,7 +1724,7 @@ nav ul, nav ol {
     padding: 26px 52px;
   }
 }
-@media only screen and (min-width: 1450px) {
+@media (min-width: 1450px) {
   .main-content {
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: white 0px 0px 2px;
@@ -1891,7 +1891,7 @@ nav ul, nav ol {
 #main-footer .social-title {
   display: none;
 }
-@media only screen and (min-width: 1080px) {
+@media (min-width: 1080px) {
   #main-footer {
     background-color: transparent;
     color: #2d2d2d;
@@ -1903,7 +1903,7 @@ nav ul, nav ol {
     width: 420px;
   }
 }
-@media only screen and (min-width: 1450px) {
+@media (min-width: 1450px) {
   #main-footer {
     position: relative;
     top: auto;
