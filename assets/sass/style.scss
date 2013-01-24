@@ -1,10 +1,11 @@
-// normalize vars
+// Normalize vars
 $legacy-support-for-ie6: false;
 $legacy-support-for-ie7: false;
 $legacy-support-for-ie8: false;
 $legacy-support-for-mozilla: false;
 
 // Breakpoints vars
+$breakpoint-s: 320px 767px;
 $breakpoint-m: min-width 768px;
 $breakpoint-l: min-width 1080px;
 $breakpoint-xl: min-width 1450px;
@@ -12,6 +13,8 @@ $breakpoint-xl: min-width 1450px;
 // Font-Awesome vars
 $fontAwesomePath:   "../font" !default;
 
+// Imports
+@import "compass/css3";
 @import "normalize";
 @import "breakpoint";
 @import "font-awesome";
@@ -31,9 +34,7 @@ $fontAwesomePath:   "../font" !default;
 ----------------------------------------------- */
 
 * {
-  -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-        box-sizing: border-box;
+  @include box-sizing(border-box);
 }
 
 html {
