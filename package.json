@@ -1,0 +1,10 @@
+{
+  "name": "ericduran.github.com",
+  "description": "Just taking up space on the internet.",
+  "author": "Eric J. Duran",
+  "homepage": "https://github.com/ericduran/ericduran.github.com",
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "version": "0.0.1"
+}

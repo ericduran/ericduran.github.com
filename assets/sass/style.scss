@@ -13,6 +13,10 @@ $breakpoint-xl: min-width 1450px;
 // Font-Awesome vars
 $fontAwesomePath:   "../font" !default;
 
+
+// Colors
+$bg-color: #fafafa;
+
 // Imports
 @import "compass/css3";
 @import "normalize";
@@ -42,7 +46,7 @@ html {
 }
 
 body {
-  background-color: #e2e2de;
+  background-color: $bg-color;
   font-family: consolas, monaco, monospace;
   font-size: 1em;
   line-height: 1.625em;
