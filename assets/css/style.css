@@ -1549,7 +1549,7 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: #474747;
+  color: rgba(185, 185, 185, 0.8);
   text-decoration: none;
 }
 

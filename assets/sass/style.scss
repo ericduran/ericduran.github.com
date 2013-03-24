@@ -16,6 +16,7 @@ $fontAwesomePath:   "../font" !default;
 
 // Colors
 $bg-color: #fafafa;
+$link-hover: rgba(185, 185, 185, 0.8);
 
 // Imports
 @import "compass/css3";
@@ -67,7 +68,7 @@ a {
     text-decoration: none;
   }
   &:hover {
-    color: #474747;
+    color: $link-hover;
     text-decoration: none;
   }
 }
