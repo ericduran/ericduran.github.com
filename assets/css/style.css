@@ -1626,7 +1626,7 @@ nav ul, nav ol {
     height: 26px;
   }
   #main-header .nav-global li a:hover {
-    background-color: #fff04a;
+    background-color: rgba(185, 185, 185, 0.8);
     color: #474747;
   }
   #main-header .nav-global li:nth-child(2) {
